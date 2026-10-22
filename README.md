@@ -1,4 +1,4 @@
-# auctura-wechat-ai
+# wechat-ai-webhook
 
 An AI auto-reply webhook for a WeChat Official Account, small enough to read in one
 sitting. WeChat posts each user message to this server; the server verifies the
