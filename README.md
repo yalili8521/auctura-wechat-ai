@@ -13,8 +13,8 @@ User message in WeChat
        signature check -> parse XML -> Gemini (3.5 s budget) -> XML reply
 ```
 
-Built in June 2026 as an exploration for Auctura AI (AI automation for small
-businesses). It runs against the free WeChat sandbox account; the notes at the bottom
+Built in June 2026 to test whether an AI auto-reply for small-business WeChat accounts
+was worth pursuing. It runs against the free WeChat sandbox account; the notes at the bottom
 say what a production account would add.
 
 ## Design points
