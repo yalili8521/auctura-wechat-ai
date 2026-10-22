@@ -55,8 +55,8 @@ copy .env.example .env            # set WECHAT_TOKEN (any private string); GEMIN
 .venv\Scripts\python.exe test_webhook.py https://<your-hostname>   # through the tunnel
 ```
 
-Expected test output: `[GET 验证] PASS`, a `200` with an XML body for the message, and
-`[错误签名] PASS` for the rejected signature.
+Expected test output: `PASS` for the GET verification, a `200` with an XML body for the
+message, and `PASS` for the rejected signature.
 
 ### Expose it with a Cloudflare tunnel
 
@@ -72,8 +72,8 @@ which may belong to a different tunnel on the same machine.
 
 ### Point the WeChat sandbox at it
 
-1. Open the WeChat sandbox (测试号) page and sign in by QR code.
-2. Under 接口配置信息 enter the URL `https://<your-hostname>/wechat` and the same
+1. Open the WeChat sandbox (test account) page and sign in by QR code.
+2. Under the interface configuration section enter the URL `https://<your-hostname>/wechat` and the same
    `WECHAT_TOKEN` as in `.env`, then submit. WeChat calls `GET /wechat` with a
    signature and expects the `echostr` back.
 3. Follow the sandbox account with your phone and send a text message.
