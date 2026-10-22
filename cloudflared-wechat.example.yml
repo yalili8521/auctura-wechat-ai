@@ -1,0 +1,10 @@
+# Cloudflare tunnel config for the WeChat webhook. Copy to cloudflared-wechat.yml.
+# Create the tunnel once:  cloudflared tunnel create wechat-ai
+# Route the hostname:      cloudflared tunnel --config cloudflared-wechat.yml route dns --overwrite-dns wechat-ai wechat.example.com
+tunnel: <tunnel-uuid>
+credentials-file: C:\Users\<you>\.cloudflared\<tunnel-uuid>.json
+
+ingress:
+  - hostname: wechat.example.com
+    service: http://127.0.0.1:8787
+  - service: http_status:404

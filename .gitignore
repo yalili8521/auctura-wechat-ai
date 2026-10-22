@@ -1,0 +1,16 @@
+# secrets and per-machine config
+.env
+cloudflared-wechat.yml
+
+# runtime
+server.log
+*.log
+__pycache__/
+*.pyc
+.venv/
+
+# editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
